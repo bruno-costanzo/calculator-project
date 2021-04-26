@@ -10,6 +10,7 @@
 
 body {
   font-family: 'Courier Prime', monospace;
+  padding-top: 5%;
 }
 
 body {
@@ -27,6 +28,7 @@ h1 {
   margin-left: 12px;
   margin-top: 2px;
   font-size: 12px;
+  font-weight: 700;
 }
 
 .screen {
@@ -44,7 +46,7 @@ h1 {
 
 .calculator {
   width: 300px;
-  height: 400px;
+  height: 450px;
   border: 4px solid black;
   margin: auto;
   display: flex;
@@ -56,7 +58,7 @@ h1 {
 }
 
 .calc-head {
-  background-color: rgb(13, 13, 43);
+  background-color: black;
   width: 100%;
   height: 25%;
   box-sizing: border-box;
@@ -81,9 +83,9 @@ h1 {
 }
 
 .calc-btn {
-  width: 45px;
-  height: 45px;
-  background-color: rgb(226, 210, 185);
+  width: 50px;
+  height: 50px;
+  background-color: rgb(228, 225, 202);
   font-size: 2em;
   font-weight: 600;
   display: flex;
@@ -96,4 +98,8 @@ h1 {
 
 .on-button {
   color: rgb(160, 0, 0);
+}
+
+.operator {
+  color: rgb(2, 92, 2);
 }
