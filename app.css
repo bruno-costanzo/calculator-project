@@ -31,21 +31,43 @@ h1 {
   font-weight: 700;
 }
 
-.screen {
+#mirror {
   width: 80%;
-  height: 60%;
+  height: 70%;
   background-color: rgb(221, 221, 221);
   margin: auto;
-  margin-top: 4px;
   border-radius: 5px;
   display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-end;
   padding-right: 5%;
+  justify-content: flex-start;
+  transition: background-color 1s;
+}
+
+.screen {
+  padding-top: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-self: flex-end;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 1.9em;
+  letter-spacing: -4px;
+}
+
+.miniScreen {
+  height: 12px;
+  display: flex;
+  justify-self: flex-start;
+  font-size: 0.8em;
+  align-self: flex-end;
+  letter-spacing: 0;
+  padding-top: 5px;
 }
 
 .calculator {
-  width: 300px;
+  width: 270px;
   height: 450px;
   border: 4px solid black;
   margin: auto;
@@ -58,7 +80,7 @@ h1 {
 }
 
 .calc-head {
-  background-color: black;
+  background-color: rgb(10, 10, 10);
   width: 100%;
   height: 25%;
   box-sizing: border-box;
@@ -94,6 +116,17 @@ h1 {
   -webkit-box-shadow: 2px 3px 0px 1px #000000;
   box-shadow: 2px 3px 0px 1px #000000;
   border-radius: 4px;
+  transition: 0.1s;
+}
+
+.calc-btn:active {
+  box-shadow: none;
+  transform: translate(1px, 1px);
+}
+
+.keydown {
+  box-shadow: none;
+  transform: translate(1px, 1px);
 }
 
 .on-button {
@@ -101,5 +134,15 @@ h1 {
 }
 
 .operator {
-  color: rgb(2, 92, 2);
+  color: rgb(1, 51, 1);
+}
+
+#ans {
+  font-size: 1.2em;
+  color: rgb(175, 93, 0);
+}
+
+.onoff {
+  background-color: black !important;
+  transition: 1s;
 }

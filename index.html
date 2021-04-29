@@ -7,6 +7,10 @@
     <title>Calculator</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
+      href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap"
       rel="stylesheet"
     />
@@ -17,14 +21,17 @@
     <div class="calculator">
       <div class="calc-head">
         <div class="brand">BC:Calc:101</div>
-        <div id="screen" class="screen">Bienvenido</div>
+        <div id="mirror">
+          <span class="miniScreen"></span>
+          <div id="screen" class="screen">Bienvenido</div>
+        </div>
       </div>
       <div class="calc-body">
         <div class="calc-row">
-          <div class="calc-btn on-button">ON</div>
-          <div class="calc-btn"></div>
-          <div class="calc-btn"></div>
-          <div class="calc-btn"></div>
+          <div class="calc-btn on-button actionbut">ON</div>
+          <div class="calc-btn actionbut clean">AC</div>
+          <div id="delete" class="calc-btn actionbut">C</div>
+          <div id="ans" class="calc-btn">ANS</div>
         </div>
         <div class="calc-row">
           <div id="n1" class="calc-btn">1</div>
@@ -46,7 +53,7 @@
         </div>
         <div class="calc-row">
           <div id="n0" class="calc-btn">0</div>
-          <div class="calc-btn">.</div>
+          <div class="decimal calc-btn">.</div>
           <div class="operator calc-btn">=</div>
           <div class="operator calc-btn">+</div>
         </div>
